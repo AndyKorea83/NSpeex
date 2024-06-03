@@ -2,7 +2,7 @@
 // Copyright (C) 2003 Jean-Marc Valin
 // Copyright (C) 1999-2003 Wimba S.A., All Rights Reserved.
 // Copyright (C) 2008 Filip Navara
-// Copyright (C) 2009-2010 Christoph Fröschl
+// Copyright (C) 2009-2010 Christoph Frï¿½schl
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
@@ -52,35 +52,17 @@ namespace NSpeex
 		/// </summary>
 		void DecodeStereo(float[] data, int frameSize);
 
-		bool PerceptualEnhancement
-		{
-			get;
-			set;
+		bool PerceptualEnhancement { get; set; }
+
+		int FrameSize { get;
 		}
 
-		int FrameSize
-		{
-			get;
-		}
+		bool Dtx { get; }
 
-		bool Dtx
-		{
-			get;
-		}
+		float[] PiGain { get; }
 
-		float[] PiGain
-		{
-			get;
-		}
+		float[] Exc { get; }
 
-		float[] Exc
-		{
-			get;
-		}
-
-		float[] Innov
-		{
-			get;
-		}
+		float[] Innov { get; }
 	}
 }
